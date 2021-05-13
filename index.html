@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> Satarupa's Resume </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".full_info_wrap .tabs ul li").click(function(){
+				$(".full_info_wrap .tabs ul li").removeClass("active");
+				$(this).addClass("active");
+
+				var datali = $(this).attr("data-li");
+
+				$(".full_info_item").hide();
+
+				if(datali == "experience"){
+					$(".experience").show();
+				}
+				else if(datali == "education"){
+					$(".education").show();
+				}
+				else if(datali == "contact"){
+					$(".contact").show();
+				}
+				else{
+					console.log("Loding...");
+				}
+			})
+		})
+	</script>
+</head>
+<body>
+	
+<div class="wrapper">
+   <div class="resume">
+      
+       <div class="profile_info">
+            <div class="profile_img">
+              <img src="my pic.jpg" alt="profile_img">
+            </div>
+            <div class="profile_data">
+                <p class="name"><b><strong>SATARUPA ROY</strong></b></p>
+                <span><i>Kolkata, West Bengal</i></span>
+            </div>
+            
+        </div>  
+      
+       <div class="skills">
+	       <div class="title">
+	          SKILLS
+	       </div>
+	       <ul>
+	         <li>
+	           <div class="skill_item html">
+	             <div class="icon"></div>
+	             <div class="text"><b>HTML</b></div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item css">
+	             <div class="icon"></div>
+	             <div class="text"><b>CSS</b></div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item js">
+	             <div class="icon"></div>
+	             <div class="text"><b>Javascript</b></div>
+	           </div>
+	         </li>
+	         
+	       </ul>
+	    </div>
+     
+        <div class="full_info_wrap">
+            <div class="tabs">
+                <ul>
+                    <li data-li="experience" class="active">Experience</li>
+                    <li data-li="education">Education</li>
+                    <li data-li="contact">Contact</li>  
+                </ul>  
+            </div>  
+            
+            <div class="full_info">
+                <div class="full_info_item experience">
+                    <div class="title">WORK EXPERIENCE</div>
+
+                    <div class="info_wrap">
+                    	<ul>
+                    		<li>
+                    			<div class="sub_title">
+                    				2020 June -2020 July
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Campus24,Bytera 
+									</div>
+									<div class="data">
+										Managed 5 interns under me in the process of launching the virtual platform. Gained a "letter of recommendation" for my work. 
+									</div>
+								</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>  
+                <div class="full_info_item education" style="display: none;">
+                  <div class="title">TRAININGS</div>
+
+                  <div class="info_wrap">
+                    	<ul>
+                    		<li>
+                    			<div class="sub_title">
+                    				SEPTEMBER 2018
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Introduction to Ethical Hacking (MyWbut)
+									</div>
+									
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				JULY 2019	
+                    			</div>
+								<div class="info_item">
+									<div class="info_title">
+										Introduction to C Programming (MyWbut)
+									</div>
+									
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				JUNE 2020	
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Web Development using HTML,CSS,PHP & MYSQL (MyWbut)
+									</div>
+									
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				AUGUST 2020	
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Energy Literacy (Swaraj Foundation)
+									</div>
+									
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				2021 March	
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Python : Basics and Beyond <div class="btn">
+              <a href="https://github.com/Nullstack-Technologies/Python-Basics-and-Beyond-2021" target="_">NullStack Technologies</a>
+            </div>
+									</div>
+									
+								</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>
+                <div class="full_info_item education" style="display: none;">
+                  <div class="title" style="padding-top: 20px;">EDUCATION</div>
+
+                  <div class="info_wrap">
+                    	<ul>
+                    		<li>
+                    			<div class="sub_title">
+                    				2018- present
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										St. Thomas' college of Engineering and Technology
+									</div>
+									<div class="data">
+										B.Tech in Electrical Engineering
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				2015-2017	
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Patha Bhavan
+									</div>
+									<div class="data">
+										Higher Secondary Education
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				2003-2015	
+                    			</div>
+								
+								<div class="info_item">
+									<div class="info_title">
+										Gokhale Memorial Girls' School
+									</div>
+									<div class="data">
+										Secondary Education
+									</div>
+								</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>  
+                <div class="full_info_item contact" style="display: none;">
+                  <div class="title">CONTACT</div>
+                  <div class="connect">
+                    <a href="https://github.com/SatarupaRoy" target="_"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="mailto:sataruparoy011298@gmail.com" target="_"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <a style="color: #0291e4; border: 1px solid #0291e4; border-radius: 4px; padding: 3px;"
+                        href="https://www.linkedin.com/in/satarupa-roy-75583b168/" target="_"><i class="fa fa-linkedin"
+                            aria-hidden="true"></i></a>
+                </div>
+                </div>  
+            </div> 
+        </div>
+     
+   </div>
+</div>
+
+</body>
+</html>
